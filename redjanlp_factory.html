@@ -44,11 +44,11 @@
 </style></head><body><h1>🏭 redjanlp's Factory</h1><div style='background:#ef9f2718;border:1px solid #ef9f2755;border-radius:8px;
 		padding:12px 16px;margin-bottom:20px;font-size:13px;line-height:1.6;'>
 		⏰ <b>This page is 2–3 minutes behind real time while live.</b><br>
-		Last updated <span id='last-updated-ago'>just now</span> (2026-06-12T21:41:11) &bull; Type <code style='background:#ffffff11;padding:1px 5px;border-radius:3px;'>!factory</code> in chat to trigger a fresh update.
+		Last updated <span id='last-updated-ago'>just now</span> (2026-06-12T21:42:11)
 	</div>
 	<script>
 	(function() {
-		var updatedAt = 1781293271 * 1000; // server timestamp, ms since epoch
+		var updatedAt = 1781293331 * 1000; // server timestamp, ms since epoch
 		var el = document.getElementById('last-updated-ago');
 		function tick() {
 			var diffSec = Math.floor((Date.now() - updatedAt) / 1000);
@@ -64,7 +64,7 @@
 				var min = Math.floor((diffSec % 3600) / 60);
 				el.textContent = hr + 'h ' + min + 'm ago';
 				if (hr >= 1) {
-					el.textContent += ' — likely offline, check !factory or wait for the stream';
+					el.textContent += ' — likely offline, check back during the next stream';
 				}
 			} else {
 				var days = Math.floor(diffSec / 86400);

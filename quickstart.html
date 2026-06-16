@@ -1,6 +1,7 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>RealFactory — Quick Start Guide</title><style>
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Quick Start — RealFactory</title><style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #0d0d1a; color: #e8e8f0; font-family: 'Segoe UI', sans-serif; padding: 24px; font-size: 14px; }
+  body { background: #0d0d1a; color: #e8e8f0; font-family: 'Segoe UI', sans-serif; font-size: 14px; }
+  .page-content { padding: 24px; }
   h1 { font-size: 24px; color: #8a82dd; margin-bottom: 6px; }
   .subtitle { color: #ffffff66; font-size: 12px; margin-bottom: 28px; }
   .section { margin-bottom: 28px; }
@@ -41,25 +42,16 @@
   .bar-fill { background: #1d9e75; height: 100%; border-radius: 3px; }
   .count { color: #8a82dd; font-size: 12px; }
   .damaged { color: #f97583; font-size: 12px; }
-
-  .story-box { background:#8a82dd18;border:1px solid #8a82dd44;border-radius:8px;padding:14px 18px;margin-bottom:28px;color:#ffffffcc;line-height:1.8;font-size:14px; }
-  .story-title { font-size:16px;font-weight:bold;color:#8a82dd;margin-bottom:6px; }
-  .steps { display:flex;flex-direction:column;gap:16px; }
-  .step { display:flex;gap:16px;align-items:flex-start;background:#12121e;border:1px solid #ffffff18;border-radius:8px;padding:14px; }
-  .step-number { font-size:28px;font-weight:bold;color:#8a82dd;min-width:36px;line-height:1; }
-  .step-content { flex:1; }
-  .step-title { font-size:15px;font-weight:bold;color:#e8e8f0;margin-bottom:4px; }
-  .step-cmd { font-family:monospace;background:#56d36422;color:#56d364;padding:3px 10px;border-radius:4px;font-size:14px;display:inline-block;margin-bottom:8px; }
-  .step-desc { color:#ffffffaa;font-size:13px;line-height:1.6;margin-bottom:8px; }
-  .step-card { background:#ffffff08;border-radius:6px;padding:10px 12px;font-size:12px;color:#ffffffaa;line-height:2.0; }
-  .step-card-name { font-size:13px;font-weight:bold;color:#e8e8f0;display:flex;align-items:center;gap:8px;margin-bottom:6px; }
-  .step-card-label { color:#ffffff55;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;min-width:90px;display:inline-block; }
-  .cmd-grid { display:flex;flex-direction:column;gap:4px; }
-  .cmd-row { display:flex;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px solid #ffffff08; }
-  .cmd-row:last-child { border-bottom:none; }
-  .cmd { font-family:monospace;background:#56d36422;color:#56d364;padding:2px 8px;border-radius:4px;font-size:13px;min-width:140px;display:inline-block; }
-  .cmd-desc { color:#ffffffbb;font-size:13px; }
-</style></head><body><h1>🚀 RealFactory — Quick Start</h1><p class='subtitle'>A factory-building idle game played in Twitch chat &bull; twitch.tv/seeno</p><div class='story-box'>
+  /* Nav bar */
+  .nav { background: #12121e; border-bottom: 1px solid #ffffff18; padding: 0 24px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; height: 48px; }
+  .nav-brand { font-weight: bold; color: #8a82dd; font-size: 15px; margin-right: 12px; text-decoration: none; }
+  .nav-link { color: #ffffffaa; font-size: 13px; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; white-space: nowrap; }
+  .nav-link:hover { background: #ffffff12; color: #e8e8f0; }
+  .nav-link.active { background: #8a82dd22; color: #8a82dd; }
+  .nav-select { background: #1a1a2e; color: #ffffffaa; border: 1px solid #ffffff22; border-radius: 6px; padding: 5px 10px; font-size: 13px; cursor: pointer; }
+  .nav-select:hover { border-color: #ffffff44; }
+  .nav-spacer { flex: 1; }
+</style></head><body><nav class='nav'><a class='nav-brand' href='https://SeeNoirSeeNo.github.io/realfactory-pages/machines_recipes.html'>🏭 RealFactory</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/machines_recipes.html'>⚙️ Machines & Recipes</a><a class='nav-link active' href='https://SeeNoirSeeNo.github.io/realfactory-pages/quickstart.html'>🚀 Quick Start</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/customization.html'>🎨 Customization</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/commands.html'>💬 Commands</a><div class='nav-spacer'></div></nav><div class='page-content'><h1>🚀 Quick Start</h1><p class='subtitle'>A factory-building idle game played in Twitch chat &bull; twitch.tv/seeno</p><div class='story-box'>
 		<div class='story-title'>What happened?</div>
 		Your spaceship crash-landed on an uncharted planet. Three machines were damaged in the crash —
 		your Tree Farm, Iron Miner and Iron Smelter all need repairs before they can run.<br><br>
@@ -178,4 +170,22 @@
 			<div class='step-desc'>The tutorial is complete. Expand your factory, upgrade your machines, and climb the leaderboard. Type !hint anytime for suggestions, or !build? to see what you can build next. Good luck!</div>
 			
 		</div>
-	</div></div></div><div class='section'><h2>Useful Commands</h2><div class='cmd-grid'><div class='cmd-row'><code class='cmd'>!hint</code><span class='cmd-desc'>What should I do next?</span></div><div class='cmd-row'><code class='cmd'>!resources</code><span class='cmd-desc'>Check your stockpiles</span></div><div class='cmd-row'><code class='cmd'>!queue</code><span class='cmd-desc'>See what's building</span></div><div class='cmd-row'><code class='cmd'>!factory</code><span class='cmd-desc'>Get your factory page link</span></div><div class='cmd-row'><code class='cmd'>!rate</code><span class='cmd-desc'>See production rates</span></div><div class='cmd-row'><code class='cmd'>!build?</code><span class='cmd-desc'>Browse all buildable machines</span></div><div class='cmd-row'><code class='cmd'>!cost</code><span class='cmd-desc'>Check build cost of a machine</span></div><div class='cmd-row'><code class='cmd'>!repair</code><span class='cmd-desc'>Repair a damaged machine</span></div><div class='cmd-row'><code class='cmd'>!upgrade</code><span class='cmd-desc'>Upgrade a machine to T2</span></div><div class='cmd-row'><code class='cmd'>!leaderboard</code><span class='cmd-desc'>See the top factories</span></div></div></div><div style='text-align:center;margin-top:32px;color:#ffffff33;font-size:12px;'>Full build reference: <a href='https://seenoirseeno.github.io/realfactory-pages/build_reference.html' style='color:#79c0ff;'>build_reference.html</a> &bull; twitch.tv/seeno &bull; RealFactory</div></body></html>
+	</div></div></div><div class='section'><h2>Useful Commands</h2><div class='cmd-grid'><div class='cmd-row'><code class='cmd'>!hint</code><span class='cmd-desc'>What should I do next?</span></div><div class='cmd-row'><code class='cmd'>!resources</code><span class='cmd-desc'>Check your stockpiles</span></div><div class='cmd-row'><code class='cmd'>!queue</code><span class='cmd-desc'>See what's building</span></div><div class='cmd-row'><code class='cmd'>!factory</code><span class='cmd-desc'>Get your factory page link</span></div><div class='cmd-row'><code class='cmd'>!rate</code><span class='cmd-desc'>See production rates</span></div><div class='cmd-row'><code class='cmd'>!cost</code><span class='cmd-desc'>Check build cost of a machine</span></div><div class='cmd-row'><code class='cmd'>!repair</code><span class='cmd-desc'>Repair a damaged machine</span></div><div class='cmd-row'><code class='cmd'>!upgrade</code><span class='cmd-desc'>Upgrade a machine to T2</span></div><div class='cmd-row'><code class='cmd'>!leaderboard</code><span class='cmd-desc'>See the top factories</span></div><div class='cmd-row'><code class='cmd'>!char</code><span class='cmd-desc'>Choose your avatar character (1-5)</span></div><div class='cmd-row'><code class='cmd'>!color</code><span class='cmd-desc'>Set your name color (1-15)</span></div><div class='cmd-row'><code class='cmd'>!flag</code><span class='cmd-desc'>Set your country flag</span></div></div></div><style>
+  .story-box { background:#8a82dd18;border:1px solid #8a82dd44;border-radius:8px;padding:14px 18px;margin-bottom:28px;color:#ffffffcc;line-height:1.8;font-size:14px; }
+  .story-title { font-size:16px;font-weight:bold;color:#8a82dd;margin-bottom:6px; }
+  .steps { display:flex;flex-direction:column;gap:16px; }
+  .step { display:flex;gap:16px;align-items:flex-start;background:#12121e;border:1px solid #ffffff18;border-radius:8px;padding:14px; }
+  .step-number { font-size:28px;font-weight:bold;color:#8a82dd;min-width:36px;line-height:1; }
+  .step-content { flex:1; }
+  .step-title { font-size:15px;font-weight:bold;color:#e8e8f0;margin-bottom:4px; }
+  .step-cmd { font-family:monospace;background:#56d36422;color:#56d364;padding:3px 10px;border-radius:4px;font-size:14px;display:inline-block;margin-bottom:8px; }
+  .step-desc { color:#ffffffaa;font-size:13px;line-height:1.6;margin-bottom:8px; }
+  .step-card { background:#ffffff08;border-radius:6px;padding:10px 12px;font-size:12px;color:#ffffffaa;line-height:2.0; }
+  .step-card-name { font-size:13px;font-weight:bold;color:#e8e8f0;display:flex;align-items:center;gap:8px;margin-bottom:6px; }
+  .step-card-label { color:#ffffff55;font-size:11px;text-transform:uppercase;letter-spacing:0.5px;min-width:90px;display:inline-block; }
+  .cmd-grid { display:flex;flex-direction:column;gap:4px; }
+  .cmd-row { display:flex;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px solid #ffffff08; }
+  .cmd-row:last-child { border-bottom:none; }
+  .cmd { font-family:monospace;background:#56d36422;color:#56d364;padding:2px 8px;border-radius:4px;font-size:13px;min-width:140px;display:inline-block; }
+  .cmd-desc { color:#ffffffbb;font-size:13px; }
+</style><div style='text-align:center;margin-top:32px;color:#ffffff33;font-size:12px;'>Auto-generated from live game data &bull; twitch.tv/seeno</div></div></body></html>

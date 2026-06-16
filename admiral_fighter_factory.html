@@ -43,22 +43,23 @@
   .count { color: #8a82dd; font-size: 12px; }
   .damaged { color: #f97583; font-size: 12px; }
   /* Nav bar */
-  .nav { background: #12121e; border-bottom: 1px solid #ffffff18; padding: 0 24px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; height: 48px; }
-  .nav-brand { font-weight: bold; color: #8a82dd; font-size: 15px; margin-right: 12px; text-decoration: none; }
-  .nav-link { color: #ffffffaa; font-size: 13px; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: background 0.15s; white-space: nowrap; }
-  .nav-link:hover { background: #ffffff12; color: #e8e8f0; }
-  .nav-link.active { background: #8a82dd22; color: #8a82dd; }
-  .nav-select { background: #1a1a2e; color: #ffffffaa; border: 1px solid #ffffff22; border-radius: 6px; padding: 5px 10px; font-size: 13px; cursor: pointer; }
-  .nav-select:hover { border-color: #ffffff44; }
+  .nav { background: #0a0a15; border-bottom: 2px solid #8a82dd44; padding: 0 24px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; min-height: 56px; }
+  .nav-brand { font-weight: bold; color: #8a82dd; font-size: 16px; margin-right: 16px; text-decoration: none; letter-spacing: 0.3px; }
+  .nav-brand:hover { color: #a89ef0; }
+  .nav-link { color: #ffffffcc; font-size: 13px; font-weight: 500; padding: 8px 16px; border-radius: 8px; text-decoration: none; transition: all 0.15s; white-space: nowrap; border: 1px solid transparent; background: #ffffff0a; }
+  .nav-link:hover { background: #8a82dd22; color: #fff; border-color: #8a82dd44; transform: translateY(-1px); }
+  .nav-link.active { background: #8a82dd33; color: #c4bfff; border-color: #8a82dd66; box-shadow: 0 0 12px #8a82dd22; }
+  .nav-select { background: #1a1a2e; color: #ffffffcc; border: 1px solid #ffffff33; border-radius: 8px; padding: 7px 12px; font-size: 13px; font-weight: 500; cursor: pointer; }
+  .nav-select:hover { border-color: #8a82dd66; background: #1e1e38; }
   .nav-spacer { flex: 1; }
 </style></head><body><nav class='nav'><a class='nav-brand' href='https://SeeNoirSeeNo.github.io/realfactory-pages/machines_recipes.html'>🏭 RealFactory</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/machines_recipes.html'>⚙️ Machines & Recipes</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/quickstart.html'>🚀 Quick Start</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/customization.html'>🎨 Customization</a><a class='nav-link' href='https://SeeNoirSeeNo.github.io/realfactory-pages/commands.html'>💬 Commands</a><div class='nav-spacer'></div><select class='nav-select' onchange="if(this.value) window.location=this.value; this.selectedIndex=0;"><option value=''>👤 View a factory...</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/admiral_fighter_factory.html'>admiral_fighter</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/doneffusion_factory.html'>doneffusion</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/ems_six_factory.html'>ems_six</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/galaxyboogie_factory.html'>galaxyboogie</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/manschiboy_factory.html'>manschiboy</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/redjanlp_factory.html'>redjanlp</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/seeno_factory.html'>seeno</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/sensitiveshad0w_factory.html'>sensitiveshad0w</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/timyschwarze_factory.html'>timyschwarze</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/weltenesser83_factory.html'>weltenesser83</option><option value='https://SeeNoirSeeNo.github.io/realfactory-pages/yuudachie_factory.html'>yuudachie</option></select></nav><div class='page-content'><h1>🏭 admiral_fighter's Factory</h1><div style='background:#ef9f2718;border:1px solid #ef9f2755;border-radius:8px;
 		padding:12px 16px;margin-bottom:20px;font-size:13px;line-height:1.6;'>
 		⏰ <b>This page is 2–3 minutes behind real time while live.</b><br>
-		Last updated <span id='last-updated-ago'>just now</span> (2026-06-16T18:37:58)
+		Last updated <span id='last-updated-ago'>just now</span> (2026-06-16T18:54:05)
 	</div>
 	<script>
 	(function() {
-		var updatedAt = 1781627878 * 1000;
+		var updatedAt = 1781628845 * 1000;
 		var el = document.getElementById('last-updated-ago');
 		function tick() {
 			var diffSec = Math.floor((Date.now() - updatedAt) / 1000);
